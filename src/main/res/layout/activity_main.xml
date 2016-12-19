@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/weatherLayout">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <EditText
+        android:hint="@string/hintAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherText"/>
+    <Button
+        android:text="@string/synchronousRequest"
+        android:onClick="syncWeatherDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/synchronousRequest"
+        android:layout_below="@id/weatherText"/>
+
+    <Button
+        android:text="@string/asynchronousRequest"
+        android:onClick="asyncWeatherDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/asynchronousRequest"
+        android:layout_below="@id/synchronousRequest"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/LocationNameText"
+        android:text="LocationName"
+        android:layout_below="@id/asynchronousRequest"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/LocationNameText"
+        android:id="@+id/LocationNameDisplay"
+        android:text="No Data"
+        android:textAlignment="center"
+        android:editable="false"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/LocationNameDisplay"
+        android:id="@+id/WindSpeedText"
+        android:text=" Wind Speed in kph"
+        android:textAlignment="center" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/WindSpeedText"
+        android:id="@+id/WindSpeedDisplay"
+        android:text="No Data"
+        android:textAlignment="center"
+        android:editable="false"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/WindSpeedDisplay"
+        android:id="@+id/TemperatureText"
+        android:text="Temperature in Farenheit"
+        android:textAlignment="center" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/TemperatureText"
+        android:id="@+id/TemperatureDisplay"
+        android:text="No Data"
+        android:textAlignment="center"
+        android:editable="false"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/TemperatureDisplay"
+        android:id="@+id/HumidityText"
+        android:text="Humidity in %"
+        android:textAlignment="center" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/HumidityText"
+        android:id="@+id/HumidityDisplay"
+        android:text="No Data"
+        android:textAlignment="center"
+        android:editable="false"
+        />
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

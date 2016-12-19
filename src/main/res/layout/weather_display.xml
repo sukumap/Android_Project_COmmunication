@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/LocationNameText"
+        android:text="LocationName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/LocationNameText"
+        android:id="@+id/LocationNameDisplay"
+        android:text="No Data"
+        android:textAlignment="center"
+        android:editable="false"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/LocationNameDisplay"
+        android:id="@+id/WindSpeedText"
+        android:text=" Wind Speed"
+        android:textAlignment="center" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/WindSpeedText"
+        android:id="@+id/WindSpeedDisplay"
+        android:text="No Data"
+        android:textAlignment="center"
+        android:editable="false"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/WindSpeedDisplay"
+        android:id="@+id/TemperatureText"
+        android:text="Temperature in Farenheit"
+        android:textAlignment="center" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/TemperatureText"
+        android:id="@+id/TemperatureDisplay"
+        android:text="No Data"
+        android:textAlignment="center"
+        android:editable="false"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/TemperatureDisplay"
+        android:id="@+id/HumidityText"
+        android:text="Humidity"
+        android:textAlignment="center" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/HumidityText"
+        android:id="@+id/HumidityDisplay"
+        android:text="No Data"
+        android:textAlignment="center"
+        android:editable="false"
+        />
+
+</RelativeLayout>

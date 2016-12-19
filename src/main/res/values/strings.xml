@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hintAnswer"> Please Enter a city,state in USA </string>
+    <string name="synchronousRequest"> Synchronous Request </string>
+    <string name="asynchronousRequest"> Asynchronous Request </string>
+    <string name="title_activity_weather__display">Weather_Display</string>
+</resources>
